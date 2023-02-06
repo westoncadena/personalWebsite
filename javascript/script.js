@@ -18,18 +18,19 @@ const link = document.querySelector('link');
 var styleElement = document.getElementById("secondaryStyleSheet");
 
 // Define the two stylesheet paths
-const style1 = '/css/style.css';
-const style2 = '/css2/style.css';
+const style1 = '/css/styles.css';
+const style2 = '/css2/styles.css';
 
 // Create a toggle function
 let currentStyle = style1;
 function toggleStyles() {
   if (currentStyle === style1){
-    currentStyle = style2;
-    styleElement.setAttribute("href","/css2/index.html");
+     currentStyle = style2;
+    styleElement.setAttribute("href","/css2/index.css");
   }
   else{
-    currentStyle = style1;
+     currentStyle = style1;
+    styleElement.setAttribute("href","/css/index.css");
   }
   link.setAttribute('href', currentStyle);
 }
