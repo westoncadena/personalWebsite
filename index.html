@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link id="secondaryStyleSheet" rel="stylesheet" href="css/index.css">
+    <script src="/javascript/script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,29 +12,26 @@
 </head>
 <body>
     <header>
-        <!--Title-->
-        <h1>Home</h1>
         <!--Navigation Menu-->
-        <div class="homenav">
-            <ul class="menu">
+        <button onclick="toggleStyles()" type="button">Style</button>
+
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <div class="homenav menu">
+            <ul class="hi">
                 <li data-text="Home"><a class="active" href="index.html">Home</a></li>
-                <li data-text="Portfolio"><a href="portfolio.html">Portfolio</a></li>
-                <li data-text="Qualifications"><a href="qualifications.html">Qualifications</a></li>
-                <li data-text="Service"><a href="service.html">Service</a></li>
-                <li data-text="AI Page"><a href="ai.html">AI Page</a></li>
+                <li data-text="Portfolio"><a href="html/portfolio.html">Portfolio</a></li>
+                <li data-text="Qualifications"><a href="html/qualifications.html">Qualifications</a></li>
+                <li data-text="Service"><a href="html/service.html">Service</a></li>
+                <li data-text="AI Page"><a href="html/ai.html">AI Page</a></li>
             </ul>
         </div>
-
+    </header>
         <section class="banner" id="home">
             <div class="textBx">
                 <h2>Hello, I'm <br><span>Weston Cadena.</span></h2>
                 <h3>I am a Computer Engineering Honnors Student at Texas A&M</h3>
-                <a href="qualifications.html" class="btn">About Me</a>
             </div>
         </section>
-
-
-    </header>
     
 
 </body>

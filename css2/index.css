@@ -1,0 +1,11 @@
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(../pictures/index/banner.JPG);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

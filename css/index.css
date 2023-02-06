@@ -1,0 +1,175 @@
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background: url(../pictures/index/banner.JPG);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2
+{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span
+{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.banner h3
+{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+/*HOME PAGE NAVIGATION*/
+
+.homenav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0d0f1b;
+    overflow: hidden;
+}
+
+.homenav ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.homenav ul li {
+    list-style: none;
+}
+
+.homenav ul li:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 6em;
+    pointer-events: none;
+    opacity: 0;
+    letter-spacing: 20px;
+    transition: 0.5s;
+    white-space: nowrap;
+}
+
+.homenav ul li:hover:before {
+    opacity: 0.05;
+    letter-spacing: 0px;
+}
+
+.homenav ul li a {
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    text-decoration: none;
+    background: #2196f3;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.homenav ul:hover li a{
+    opacity: 0;
+}
+
+.homenav ul li a:hover{
+    transform: scale(1.4);
+    z-index: 1000;
+    background: #ff3f81;
+    opacity: 1;
+}
+
+.homenav ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+     left: -100px; 
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0,8), transparent);
+    transform: skewX(35deg);
+    transition: 0s;
+    
+    
+}
+
+.homenav ul li a:hover:before {
+    left: calc(100% + 100px);
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.toggle
+{
+    width: 40px;
+    height: 40px;
+    background: url(/pictures/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+}
+.toggle.active
+{
+    background: url(/pictures/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* header.sticky .toggle
+{
+    filter: invert(1);
+}
+header.sticky .toggle.active
+{
+    filter: invert(1);
+} */
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.menu.active {
+    left: 0;
+}
