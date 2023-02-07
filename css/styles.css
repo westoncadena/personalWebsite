@@ -291,7 +291,7 @@ header.sticky .button:hover
 
   .postContainer {
     display: grid;
-    grid-template-rows: 200px 1fr;
+    grid-template-rows: px 1fr;
   }
 
   .postContainer .filler {
@@ -306,3 +306,144 @@ header.sticky .button:hover
     color: var(--text-color);
   }
 
+
+/* QUALIFICATIONS */
+
+.qualTitle {
+    display: flex;
+    justify-content: center;
+    color:white;
+    margin-bottom: 5px;
+}
+
+/* hexagon */
+.hexContainer{
+    width: 950px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 5%;
+    background-color: var(--unselected-color);
+}
+
+.hexContainer .hexagonArea{
+    display: flex;
+}
+
+.hexContainer .hexagonArea .last{
+    transform: translateY(-45px);
+}
+
+.hexContainer .hexagonArea .hexagon{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 0 10px;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* cursor: pointer; */
+    transition: 0.5s;
+} 
+
+.hexContainer .hexagonArea .hexagon img {
+    width: 80px;
+}
+
+.hexContainer .hexagonArea .hexagon h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.hexContainer .hexagonArea .hexagon:hover {
+    background: linear-gradient(90deg,#0162c8,#55e7fc);;
+    transform: scale(0.8);
+}
+      
+      
+/* resume */
+.resume {
+    font-family:'Times New Roman';
+    font-size:12pt;
+    display: flex;
+    justify-content: center;
+    background: var(--selected-color);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 20px;
+    width: 60%;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+
+.resume h1, h2, h4, h5, p { 
+    margin:0pt
+}
+.resume li {
+    margin-top:0pt; margin-bottom:0pt
+}
+.resume h1 { 
+    page-break-inside:auto; page-break-after:avoid; font-family:'Times New Roman'; font-size:11pt; font-weight:bold; color:#000000
+}
+.resume h2 {
+    page-break-inside:auto; page-break-after:avoid; font-family:'Times New Roman'; font-size:10pt; font-weight:bold; color:#000000 
+}
+.resume h4 {
+    margin-top:12pt; margin-bottom:3pt; page-break-inside:auto; page-break-after:avoid; font-family:'Times New Roman'; font-size:14pt; font-weight:bold; font-style:normal; color:#000000;
+}
+.resume h5 { margin-left:108pt; page-break-inside:auto; page-break-after:avoid; font-family:'Times New Roman'; font-size:10pt; font-weight:bold; color:#000000 
+}
+.resume .Heading7 { 
+    margin-left:108pt; page-break-inside:auto; page-break-after:avoid; font-family:'Times New Roman'; font-size:10pt; font-weight:normal; font-style:italic;
+    color:#000000; -aw-style-name:heading7;
+}
+.resume .Heading8 { text-align:center; page-break-inside:auto; page-break-after:avoid; font-family:'Arial Rounded MT Bold'; font-size:20pt;
+     font-weight:normal; color:#000000; -aw-style-name:heading8 
+}
+.resume .BalloonText { 
+    font-family:Tahoma; font-size:8pt 
+}
+.resume .BodyText { 
+    text-align:center; font-size:12pt
+}
+.resume .CommentSubject {
+    font-size:10pt; font-weight:bold 
+}
+.resume .CommentText { 
+    font-size:10pt 
+}
+.resume .FootnoteText {
+    font-size:10pt 
+} 
+.resume .ListParagraph {
+    margin-left:36pt; font-size:12pt 
+}
+.resume .Revision {
+    font-size:12pt 
+}
+.resume .Title { 
+    text-align:center; font-family:Georgia; font-size:14pt; font-weight:bold 
+}
+.resume span.CommentReference {
+    font-size:8pt 
+}
+.resume span.CommentSubjectChar {
+     font-weight:bold 
+}
+.resume span.Hyperlink { 
+    text-decoration:underline; color:#0000ff; -aw-style-name:hyperlink 
+}
+.resume span.UnresolvedMention { color:#605e5c; background-color:#e1dfdd }
