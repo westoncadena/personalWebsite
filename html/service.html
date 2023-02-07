@@ -2,22 +2,29 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-
+    <link id="secondaryStyleSheet" rel="stylesheet" href="/css/service.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 </head>
 <body>
-    <!--Navigation Menu-->
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="qualifications.html">Qualifications</a>
-        <a class="active" href="service.html">Service</a>
-        <a href="ai.html">AI Page</a>
-    </div>
+    <header>
+        <!--Navigation Menu-->
+        <button onclick="toggleStyles()" class="button">Style</button>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <nav class="menu">
+            <ul class="hi">
+                <li data-text="Home"><a href="/index.html">Home</a></li>
+                <li data-text="Portfolio"><a href="/html/portfolio.html">Portfolio</a></li>
+                <li data-text="Qualifications"><a href="/html/qualifications2.html">Qualifications</a></li>
+                <li data-text="Service"><a class="active" href="/html/service.html">Service</a></li>
+                <li data-text="AI Page"><a href="/html/ai.html">AI Page</a></li>
+            </ul>
+        </nav>
+    </header>
     <!-- Service Items -->
     <div class="wrapper">
 		<div class="container">

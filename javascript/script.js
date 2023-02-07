@@ -15,7 +15,7 @@ const button = document.querySelector('button');
 
 // Get the <link> element
 const link = document.querySelector('link');
-var styleElement = document.getElementById("secondaryStyleSheet");
+
 
 // Define the two stylesheet paths
 const style1 = '/css/styles.css';
@@ -23,16 +23,16 @@ const style2 = '/css2/styles.css';
 
 // Create a toggle function
 let currentStyle = style1;
+
 function toggleStyles() {
-  if (currentStyle === style1){
-     currentStyle = style2;
-    styleElement.setAttribute("href","/css2/index.css");
-  }
-  else{
-     currentStyle = style1;
-    styleElement.setAttribute("href","/css/index.css");
-  }
-  link.setAttribute('href', currentStyle);
+
+    if (currentStyle === style1){
+        currentStyle = style2;
+    }
+    else{
+        currentStyle = style1;
+    }
+    link.setAttribute('href', currentStyle);
 }
 
 // Add a click event listener to the button
