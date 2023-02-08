@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <script src="../javascript/script.js"></script>
+    <link rel="stylesheet" id="styles" href="/css/styles.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/d0ad93152e.css" crossorigin="anonymous">
+    <script src="../js/scripts.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +27,8 @@
     </header>
     
     <div class="postContainer">
+        <!-- <button  class="button next">next</button>
+        <button  class="button prev">prev</button> -->
         <!--filler for grid -->
         <div class="filler"></div>
         <!-- Content -->
@@ -33,7 +36,6 @@
             <!-- Main Content -->
             <div class="main-content">
                 <h1 class="recent-post-title">Projects</h1>
-
                 <div class="post">
                     <img src="/pictures/portfolio/garfield.png" alt="" class="post-image">
                     <div class="post-preview">
@@ -41,7 +43,7 @@
                         <i class="far fa-user"> Weston Cadena</i>
                         &nbsp;
                         <i class="far calendar"> July 23, 2022</i>
-                        <p class="preview-text">pGarfield is a parallel implementaion of Garfield++, a particle simulation toolkit created by CERN</p>
+                        <p class="preview-text">pGarfield is a parallel implementaion of Garfield++, a particle simulation toolkit created by CERN. pGarfield aims to tackle the issue of long simulation times in Garfield++ by utilizing parallel computing techniques. It allows the simulation to run on multiple processors simultaneously, thus reducing the overall simulation time. This makes pGarfield an ideal choice for large-scale simulations that require high computational power. With the power of parallel processing, researchers and scientists can now obtain results faster and make more progress in their research. </p>
                         <a href="https://github.com/westoncadena/pGarfield" target="_blank" class="button read-more">Read More</a>
                     </div>
                 </div>
@@ -53,7 +55,7 @@
                         <i class="far fa-user"> Weston Cadena</i>
                         &nbsp;
                         <i class="far calendar"> October 12 2022</i>
-                        <p class="preview-text"> Puzzle Solver is a deep learning model trained on input to put a shuffled up image into the correct order</p>
+                        <p class="preview-text"> Puzzle Solver is a deep learning model designed to solve image puzzles. It works by analyzing an input image that is shuffled and out of order, and then rearranging the pieces to form the correct, completed image. The model is trained on a large dataset of images, allowing it to learn the features and patterns that are unique to different types of puzzles.</p>
                         <a href="https://github.com/westoncadena/PuzzleSolver" target="_blank" class="button read-more">Read More</a>
                     </div>
                 </div>
@@ -65,17 +67,28 @@
                         <i class="far fa-user"> Weston Cadena</i>
                         &nbsp;
                         <i class="far calendar"> January 29 2023</i>
-                        <p class="preview-text">FlightGPT is a user interface that allows users to input prompt about travel location and recieve helpful
-                            information about travel ideas and flights to book.</p>
+                        <p class="preview-text">FlightGPT is a user-friendly platform that streamlines the travel planning process. It leverages the advanced capabilities of GPT-3, the latest language model developed by OpenAI, to provide personalized recommendations for travel destinations based on user inputs. The platform allows users to input a prompt about their desired travel location and receive information about popular travel ideas and the best flights to book. The recommendations are generated in real-time, taking into account various factors such as budget, preferred travel dates, and destination preferences.</p>
                         <a href="https://github.com/westoncadena/TamuHack2023" target="_blank" class="button read-more">Read More</a>
                     </div>
                 </div>
                 
             </div>
             <!-- // Main Content-->
-            <div class="sidebar"></div>
+            <div class="sidebar">
+                <diV class="section-side">
+                    <div class="section-post">
+                        <h2 class="section-title">Future Projects</h2>
+                        <div class="section-img">
+                            <img src="/pictures/minecraft.webp" alt="">
+                        </div>
+                        <h3 class="section-h3">Minecraft Clayhorses</h3>
+                        <p class="section-p">The Clay Horse mod for Minecraft expands on the popular Clay Soldiers mod by adding a new type of clay creature - horses! These horses are made from clay and can be crafted using clay blocks and various other materials. Once crafted, the horses can be ridden and used for transportation or for battles in the game. Players can also customize their clay horses with different colors and patterns to make them truly unique. With this new addition, players can now experience even more exciting battles and adventures in the world of Minecraft.</p>
+                        <a href="https://ftb.fandom.com/wiki/Clay_Soldiers" target="_blank" class="button read-more section-b">Read More</a>
+                    </div>
+                </diV>
+
+            </div>
         </div>
     </div>
-
 </body>
 </html>

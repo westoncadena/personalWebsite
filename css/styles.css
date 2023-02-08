@@ -264,6 +264,18 @@ header.sticky .button:hover
     background: var(--main-color);
 }
 
+@media (max-width: 1250px) {
+    .content .main-content .post {
+        height: 350px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .content .main-content .post {
+        height: 400px;
+    }
+}
+
 .content .main-content .post .post-image {
     width: 40%;
     height: 100%;
@@ -289,6 +301,48 @@ header.sticky .button:hover
     height: 300px;
 }
 
+.content .sidebar .section-side {
+    background-color: var(--unselected-color);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 75px;
+}
+
+.content .sidebar .section-side .section-title {
+    display: block;
+    padding: 15px 0px 2px 0px;
+    border-bottom: 1px solid white;
+}
+
+.content .sidebar .section-side .section-img {
+    display: block;
+    padding: 15px 0px 0px;
+}
+
+.content .sidebar .section-side .section-h3 {
+    display: block;
+    padding: 15px 0px 0px;
+}
+
+.content .sidebar .section-side .section-p {
+    display: block;
+    padding: 15px 0px 15px 0px;
+}
+
+.content .sidebar .section-side .section-b {
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+}
+
+.content .sidebar .section-side .section-b {
+    background: linear-gradient(90deg, #55e7fc, #0162c8);
+}
+
+.content .sidebar .section-side .section-post{
+    border-bottom: 1px solid white;
+}
+
   .postContainer {
     display: grid;
     grid-template-rows: px 1fr;
@@ -297,6 +351,7 @@ header.sticky .button:hover
   .postContainer .filler {
     grid-row: 1;
     padding-right: 10%;
+    margin: 4%;
     color: var(--text-color);
   }
 
@@ -372,6 +427,17 @@ header.sticky .button:hover
       
       
 /* resume */
+
+#resumeTitle{
+    font-family: 'Poppins', sans-serif !important;
+    color: white;
+    margin-top: 15%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    position: relative;
+    display: flex;
+    
+}
 .resume {
     font-family:'Times New Roman';
     font-size:12pt;
@@ -384,7 +450,6 @@ header.sticky .button:hover
     width: 60%;
     align-items: center;
     margin-left: 20%;
-    margin-top: 15%;
     margin-bottom: 5%;
 }
 
