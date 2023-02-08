@@ -134,7 +134,7 @@ header ul li a:hover.active {
 {
     position: relative;
     min-height: 100vh;
-    background: url(pictures/index/banner.JPG);
+    background: url(../pictures/index/banner.JPG);
     background-size: cover;
     background-position: right;
     display: flex;
