@@ -391,10 +391,11 @@ header.sticky .toggle.active
 }
 
 .postContainer .main-content .post {
-    width: 350px;
+    width: 320px;
     height: 350px;
     margin: 0px 10px;
     display: inline-block;
+    margin-bottom: 20px;
     
 }
 

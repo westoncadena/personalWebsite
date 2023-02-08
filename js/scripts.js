@@ -20,8 +20,8 @@ const link = document.querySelector('link');
 
 
 // Define the two stylesheet paths
-const style1 = '/css/styles.css';
-const style2 = '/css2/styles.css';
+const style1 = 'css/styles.css';
+const style2 = 'css2/styles.css';
 
 
 var currentStyle;
